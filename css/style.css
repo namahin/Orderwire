@@ -310,9 +310,26 @@ header {
     background: linear-gradient(180deg, #10ac840d 0%, #ffffff00 100%);
     padding: 120px 0;
 }
-.story-image{
+
+.story-image {
     margin-right: 80px;
 }
 
-.story-content{}
-.story-content{}
+.story-content {}
+
+.story-content p {
+    font-size: 16px;
+    line-height: 30px;
+    color: #222020;
+    margin-bottom: 25px;
+}
+
+.story-content a.btn-theme {
+    margin-top: 15px;
+}
+
+/*:::::::::::::::::::::::::::: features section css ::::::::::::::::::::::::::::*/
+.features-sec{
+    padding: 100px 0;
+    background: linear-gradient(180deg, #fff0 0%, #10ac840d 100%);
+}
