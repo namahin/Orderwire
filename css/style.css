@@ -43,6 +43,11 @@
 }
 
 html,
+body {
+    background-color: #ffffff;
+}
+
+html,
 body,
 p,
 h1,
@@ -123,13 +128,191 @@ button:hover {
     border: 2px solid #10AC84;
 }
 
+.sec-title {
+    font-weight: 600;
+    font-size: 50px;
+    line-height: 75px;
+    color: #010C09;
+}
+
 
 /*:::::::::::::::::::::::::::: header css ::::::::::::::::::::::::::::*/
+header {
+    background-color: #fff;
+    box-shadow: 0 0 15px #99999921;
+}
 
 .navbar-brand {
-    max-width: 180px;
+    max-width: 200px;
 }
 
 .navbar-brand a {
     opacity: 1;
 }
+
+.navbar-toggler {
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.navbar-toggler span svg {
+    width: 26px;
+}
+
+.nav-item {
+    padding-left: 30px;
+}
+
+.nav-link {
+    color: #010C09;
+    font-size: 16px;
+    line-height: 1;
+    opacity: 1;
+}
+
+.dropdown-menu {}
+
+.nav-title {}
+
+.nav-title .icon {}
+
+.nav-title .text {}
+
+/*:::::::::::::::::::::::::::: hero section css ::::::::::::::::::::::::::::*/
+.hero-sec {
+    background-image: url(../images/banner.png);
+    background-color: #fafafa;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 130px 0;
+    height: calc(100vh - 73px);
+}
+
+.hero-content {
+    max-width: 850px;
+}
+
+.hero-content h1 {
+    font-size: 60px;
+    line-height: 80px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.hero-content p {
+    color: #010C09;
+    font-size: 18px;
+    line-height: 32px;
+    font-weight: 400;
+    margin-bottom: 50px;
+}
+
+.hero-btn-group {
+    display: inline-flex;
+    align-items: center;
+}
+
+.hero-btn-group li {
+    margin-right: 40px;
+}
+
+.hero-btn-group li:last-child {
+    margin-right: 0;
+}
+
+.hero-btn-group li:last-child a {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1;
+    color: #010C09;
+}
+
+.hero-btn-group li a .icon {}
+
+.hero-btn-group li a .icon svg {
+    width: 50px;
+}
+
+.hero-btn-group li a .text {
+    padding-left: 20px;
+}
+
+/*:::::::::::::::::::::::::::: hero section css ::::::::::::::::::::::::::::*/
+.solutions-sec {
+    padding: 180px 0;
+}
+
+.solutions-card {
+    /* background: #FFFFFF;
+    box-shadow: 10px 15px 50px #00000014;
+    border-radius: 10px; */
+    background: rgba(255, 255, 255, 0.5);
+    border: 1px solid #10ac841a;
+    box-sizing: border-box;
+    border-radius: 10px;
+    padding: 30px 50px 50px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.icon-area {
+    background: #FFFFFF;
+    border: 1px solid #10ac844d;
+    box-sizing: border-box;
+    padding: 19px;
+    border-radius: 100px;
+    width: 140px;
+    height: 140px;
+    margin: auto;
+    margin-bottom: 40px;
+}
+
+.icon-area .icon {
+    background: #FFFFFF;
+    box-shadow: 2px 4px 15px #00000014;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: relative;
+
+}
+
+.icon-area .icon svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 36px;
+}
+
+.solutions-card h3 {
+    color: #000;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.solutions-card p {
+    font-size: 14px;
+    line-height: 26px;
+    color: #999999;
+    font-weight: 400;
+    margin-bottom: 25px;
+
+}
+
+.solutions-card a {}
+
+
+/*:::::::::::::::::::::::::::: story section css ::::::::::::::::::::::::::::*/
+.story-sec {
+    background: linear-gradient(180deg, #10ac840d 0%, #ffffff00 100%);
+    padding: 120px 0;
+}
+.story-image{
+    margin-right: 80px;
+}
+
+.story-content{}
+.story-content{}
