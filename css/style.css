@@ -82,6 +82,7 @@ a:hover {
 a:hover {
     opacity: 1;
 }
+
 /* a:focus{
     background-color: #10AC84;
 } */
@@ -124,9 +125,11 @@ button:hover {
 
 
 /*:::::::::::::::::::::::::::: header css ::::::::::::::::::::::::::::*/
-.navbar-brand{
+
+.navbar-brand {
     max-width: 180px;
 }
-.navbar-brand a{
+
+.navbar-brand a {
     opacity: 1;
 }
