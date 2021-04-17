@@ -329,7 +329,78 @@ header {
 }
 
 /*:::::::::::::::::::::::::::: features section css ::::::::::::::::::::::::::::*/
-.features-sec{
+.features-sec {
     padding: 100px 0;
     background: linear-gradient(180deg, #fff0 0%, #10ac840d 100%);
+}
+
+/*:::::::::::::::::::::::::::: quote section css ::::::::::::::::::::::::::::*/
+.quote-sec {
+    padding: 100px 0;
+}
+
+.quote-card {
+    background-image: url(../images/qute.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-color: #10AC84;
+    padding: 80px 100px;
+    border-radius: 20px;
+}
+
+.quote-card h2 {
+    font-size: 32px;
+    line-height: 48px;
+    font-weight: 600;
+    color: #FFFFFF;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.quote-card form {
+    background-color: #fff;
+    border-radius: 10px;
+    display: table;
+    width: 100%;
+    position: relative;
+    max-width: 570px;
+    margin: auto;
+}
+
+.quote-card form p {
+    margin: 0;
+    display: table-cell;
+    width: 100%;
+    padding-left: 15px;
+}
+
+.quote-card form select {
+    height: 70px;
+    border: none;
+    border-right: 1px solid #DADADA;
+    color: #222020;
+    font-size: 16px;
+}
+
+.quote-card form select option {
+    color: #222020;
+    font-size: 14px;
+}
+
+.quote-card form input {
+    height: 70px;
+    border: none;
+}
+
+.quote-card form button {
+    vertical-align: middle;
+    width: 220px;
+    border-width: 5px;
+    border-color: #fff;
+    border-radius: 10px;
+    height: 67px;
+    position: relative;
+    top: -2px;
+    right: 1px;
 }
