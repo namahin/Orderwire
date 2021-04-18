@@ -115,7 +115,7 @@ button:hover {
     line-height: 1;
     color: #fff;
     background-color: #10AC84;
-    border: 2px solid #10AC84;
+    border: 1px solid #10AC84;
     padding: 15px 25px;
     border-radius: 6px;
     display: inline-block;
@@ -125,7 +125,19 @@ button:hover {
 .btn-theme:focus {
     color: #10AC84;
     background-color: #fff;
-    border: 2px solid #10AC84;
+    border: 1px solid #10AC84;
+}
+
+.btn-outline {
+    color: #10AC84;
+    background-color: #fff;
+    border: 1px solid #10AC84;
+}
+
+.btn-outline:hover {
+    color: #fff;
+    background-color: #10AC84;
+    border: 1px solid #10AC84;
 }
 
 .sec-title {
