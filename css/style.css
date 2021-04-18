@@ -636,3 +636,94 @@ footer {}
 .social-logo li a svg {
     width: 26px;
 }
+
+/*:::::::::::::::::::::::::::: inner page css ::::::::::::::::::::::::::::*/
+.inner-banner {
+    background-image: url(../images/inner-banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+}
+
+.inner-banner::before {
+    content: "";
+    background-color: #010c09bf;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.inner-banner-content {
+    position: relative;
+    z-index: 1;
+}
+
+.inner-banner-content h1 {
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 62px;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.inner-banner-content p {
+    font-size: 18px;
+    line-height: 32px;
+    text-align: center;
+    color: #FFFFFF;
+    opacity: 0.8;
+}
+
+.search-box {}
+
+.search-box form {}
+
+.search-box form label {
+    background: #FFFFFF;
+    border-radius: 10px;
+}
+
+.search-box form label .icon {}
+
+.search-box form label .icon svg {}
+
+.search-box form label input {}
+
+.inner-page-area {
+    padding: 90px 0;
+}
+
+.inner-page-area main {}
+
+.side-bar {}
+
+.side-bar h3 {}
+
+.side-bar ul {}
+
+.side-bar ul li {}
+
+.side-bar ul li a {}
+
+.side-bar ul li a span {}
+
+.page-content {}
+
+.category-card {}
+
+.category-card .card-head {}
+
+.category-card .card-head h2 {}
+
+.category-card .card-head p {}
+
+.category-card .card-body ul {}
+
+.category-card .card-body ul li {}
+
+.category-card .card-body ul li a {}
+
+.category-card .card-foot {}
