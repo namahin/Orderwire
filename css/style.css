@@ -644,6 +644,7 @@ footer {}
     background-size: cover;
     background-position: center center;
     position: relative;
+    padding: 100px 0;
 }
 
 .inner-banner::before {
@@ -667,6 +668,7 @@ footer {}
     line-height: 62px;
     color: #FFFFFF;
     text-align: center;
+    margin-bottom: 15px;
 }
 
 .inner-banner-content p {
@@ -675,22 +677,49 @@ footer {}
     text-align: center;
     color: #FFFFFF;
     opacity: 0.8;
+    margin-bottom: 30px;
 }
 
 .search-box {}
 
-.search-box form {}
+.search-box form {
+    max-width: 500px;
+    margin: auto;
+}
 
 .search-box form label {
     background: #FFFFFF;
     border-radius: 10px;
+    width: 100%;
+    position: relative;
+    height: 60px;
 }
 
-.search-box form label .icon {}
+.search-box form label .icon {
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 20px;
+    transform: translate(0, -50%);
+}
 
-.search-box form label .icon svg {}
+.search-box form label .icon svg {
+    width: 25px;
+}
 
-.search-box form label input {}
+.search-box form label input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    color: #010C09;
+    font-size: 16px;
+    line-height: 1;
+    height: 100%;
+    padding: 12px 20px 12px 60px;
+}
 
 .inner-page-area {
     padding: 90px 0;
