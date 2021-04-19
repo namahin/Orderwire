@@ -783,21 +783,67 @@ footer {}
     padding: 90px 0;
 }
 
-.inner-page-area main {}
+.inner-page-area main {
+    display: table;
+    width: 100%;
 
-.side-bar {}
+}
 
-.side-bar h3 {}
+.side-bar {
+    display: table-cell;
+    width: 360px;
+    vertical-align: top;
+    padding-right: 25px;
+    border-right: 1px solid #00000026;
+}
 
-.side-bar ul {}
+.side-bar h3 {
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 32px;
+    color: #010C09;
+    border-bottom: 1px solid #010c091a;
+    padding: 25px 20px;
+    margin: 0;
+}
 
-.side-bar ul li {}
+.side-bar-widget {
+    border: 1px solid #010c091a;
+    box-sizing: border-box;
+    border-radius: 10px;
 
-.side-bar ul li a {}
+}
 
-.side-bar ul li a span {}
+.side-bar-widget ul {padding: 30px 20px;}
 
-.page-content {}
+.side-bar-widget ul li {padding-bottom: 30px;}
+
+.side-bar-widget ul li a {
+    font-size: 16px;
+    color: #010C09;
+    position: relative;
+    opacity: 1;
+    line-height: 1;
+    width: 100%;
+    display: block;
+}
+
+.side-bar-widget ul li a span {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background: #10AC84;
+    color: #fff;
+    right: 0;
+    text-align: center;
+    border-radius: 20px;
+    font-size: 12px;
+    line-height: 30px;
+}
+
+.page-content {
+    padding-left: 25px;
+}
 
 .category-card {}
 
