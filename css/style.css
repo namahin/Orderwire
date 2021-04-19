@@ -116,9 +116,10 @@ button:hover {
     color: #fff;
     background-color: #10AC84;
     border: 1px solid #10AC84;
-    padding: 15px 25px;
+    padding: 18px 25px;
     border-radius: 6px;
     display: inline-block;
+    opacity: 1;
 }
 
 .btn-theme:hover,
@@ -814,18 +815,27 @@ footer {}
 
 }
 
-.side-bar-widget ul {padding: 30px 20px;}
+.side-bar-widget ul {
+    padding: 30px 20px;
+}
 
-.side-bar-widget ul li {padding-bottom: 30px;}
+.side-bar-widget ul li {
+    padding-bottom: 30px;
+}
 
 .side-bar-widget ul li a {
     font-size: 16px;
     color: #010C09;
     position: relative;
     opacity: 1;
-    line-height: 1;
+    line-height: 30px;
     width: 100%;
     display: block;
+    padding-right: 40px;
+}
+
+.side-bar-widget ul li a:hover {
+    color: #10AC84;
 }
 
 .side-bar-widget ul li a span {
@@ -844,19 +854,68 @@ footer {}
 .page-content {
     padding-left: 25px;
 }
+.page-content .col-md-6{
+    margin-bottom: 25px;
+}
+.category-card {
+    box-shadow: 0 0 0 1px #10ac841a;
+    transition: linear .2s;
+    box-sizing: border-box;
+    border-radius: 10px;
+    height: 100%;
+    /*! margin-bottom: 30px; */
+}
 
-.category-card {}
+.category-card:hover {
+    background: #FFFFFF;
+    box-shadow: 15px 25px 50px #00000014;
+    border-radius: 10px;
+    transition: linear .2s;
+}
 
-.category-card .card-head {}
+.category-card .card-head {
+    border-bottom: 1px solid #010c091a;
+    padding: 25px 20px;
+}
 
-.category-card .card-head h2 {}
+.category-card .card-head h2 {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 46px;
+    color: #010C09;
+    margin-bottom: 0;
+}
 
-.category-card .card-head p {}
+.category-card .card-head p {
+    font-size: 15px;
+    line-height: 32px;
+    color: #010C09;
+    opacity: 0.5;
+    margin: 0;
+}
 
+.category-card .card-body {
+    padding: 20px;
+}
 .category-card .card-body ul {}
 
-.category-card .card-body ul li {}
+.category-card .card-body ul li {
+    padding-bottom: 15px;
+}
 
-.category-card .card-body ul li a {}
+.category-card .card-body ul li a {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    color: #010C09;
+    opacity: 1;
+}
 
-.category-card .card-foot {}
+.category-card .card-body ul li a:hover {
+    color: #10AC84;
+}
+
+.category-card .card-foot {
+    padding: 0 20px;
+    padding-bottom: 30px;
+}
