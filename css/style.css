@@ -387,6 +387,7 @@ header nav {
 }
 
 .solutions-card {
+    position: relative;
     background: #ffffff80;
     box-shadow: 0 0 0 1px #10ac841a;
     transition: linear .2s;
@@ -395,11 +396,31 @@ header nav {
     padding: 30px 50px 50px;
     text-align: center;
     margin-bottom: 30px;
+    overflow: hidden;
 }
 
 .solutions-card:hover {
     background: #FFFFFF;
     box-shadow: 10px 15px 50px #00000014;
+    transition: linear .2s;
+}
+
+.solutions-card hr {
+    position: absolute;
+    background: #10AC84;
+    border-radius: 10px 10px 0px 0px;
+    width: 120px;
+    height: 10px;
+    bottom: -10px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    opacity: 1;
+    margin: 0;
+    transition: linear .2s;
+}
+
+.solutions-card:hover hr {
+    bottom: 0;
     transition: linear .2s;
 }
 
