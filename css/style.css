@@ -704,6 +704,7 @@ footer {}
     background-position: center center;
     position: relative;
     padding: 100px 0;
+    margin-bottom: 40px;
 }
 
 .inner-banner::before {
@@ -781,7 +782,7 @@ footer {}
 }
 
 .inner-page-area {
-    padding: 90px 0;
+    padding: 50px 0;
 }
 
 .inner-page-area main {
@@ -823,6 +824,10 @@ footer {}
     padding-bottom: 30px;
 }
 
+.side-bar-widget ul li:last-child {
+    padding-bottom: 0;
+}
+
 .side-bar-widget ul li a {
     font-size: 16px;
     color: #010C09;
@@ -854,9 +859,11 @@ footer {}
 .page-content {
     padding-left: 25px;
 }
-.page-content .col-md-6{
+
+.page-content .col-md-6 {
     margin-bottom: 25px;
 }
+
 .category-card {
     box-shadow: 0 0 0 1px #10ac841a;
     transition: linear .2s;
@@ -897,6 +904,7 @@ footer {}
 .category-card .card-body {
     padding: 20px;
 }
+
 .category-card .card-body ul {}
 
 .category-card .card-body ul li {
@@ -918,4 +926,77 @@ footer {}
 .category-card .card-foot {
     padding: 0 20px;
     padding-bottom: 30px;
+}
+
+.sub-category-card {
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+.sub-category-card:hover {
+    box-shadow: none;
+    background-color: transparent;
+}
+
+.sub-category-card .card-head {
+    padding-top: 0;
+}
+
+.sub-category-card .card-head h2 {
+    line-height: 1;
+}
+
+.sub-category-card .card-head p {
+    margin-top: 10px;
+}
+
+.page-bradcrumb {
+    padding-top: 10px;
+}
+
+.page-bradcrumb ul {}
+
+.page-bradcrumb ul li {
+    display: inline-flex;
+    align-items: center;
+    margin-right: 15px;
+}
+
+.page-bradcrumb ul li::after {
+    content: "";
+    background-image: url(../images/arrow-right.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    opacity: 0.7;
+    height: 25px;
+    width: 20px;
+}
+
+.page-bradcrumb ul li:last-child::after {
+    display: none;
+}
+
+.page-bradcrumb ul li a {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 30px;
+    color: #010C09;
+    opacity: 0.7;
+    margin-right: 15px;
+}
+
+.page-bradcrumb ul li:last-child {
+    margin-right: 0;
+}
+
+.page-bradcrumb ul li:last-child a {
+    pointer-events: none;
+    opacity: 1;
+    margin-right: 0;
+}
+
+.page-bradcrumb ul li a:hover {
+    opacity: 1;
 }
