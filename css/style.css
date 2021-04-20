@@ -954,6 +954,10 @@ footer {}
     color: #10AC84;
 }
 
+.category-card .card-body ul li a.active {
+    color: #10AC84;
+}
+
 .category-card .card-body .inner-block {
     margin-bottom: 30px;
 }
