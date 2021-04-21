@@ -368,7 +368,7 @@ header nav {
 /*:::::::::::::::::::::::::::: solutions section css ::::::::::::::::::::::::::::*/
 .solutions-sec {
     position: relative;
-    padding: 180px 0;
+    padding: 150px 0;
     background-image: url(../images/solutions-bg.svg);
     background-repeat: no-repeat;
     background-size: contain;
@@ -425,6 +425,12 @@ header nav {
 
 .solutions-card:hover hr {
     bottom: 0;
+    transition: linear .2s;
+}
+
+.solutions-card:hover a {
+    background: #10AC84;
+    color: #fff;
     transition: linear .2s;
 }
 
@@ -517,11 +523,22 @@ header nav {
 /*:::::::::::::::::::::::::::: features section css ::::::::::::::::::::::::::::*/
 .features-sec {
     padding: 100px 0;
-    background-color: linear-gradient(180deg, #fff0 0%, #10ac840d 100%);
+    background: linear-gradient(180deg, #fff0 0%, #10ac840d 100%);
+    position: relative;
+}
+
+.features-sec::before {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translate(0, -50%);
+    content: '';
+    height: 90%;
+    width: 250px;
     background-image: url(../images/features-bg-left.svg);
     background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center left;
+    background-size: cover;
+    background-position: center right;
 }
 
 /*:::::::::::::::::::::::::::: quote section css ::::::::::::::::::::::::::::*/
@@ -535,17 +552,17 @@ header nav {
     background-size: cover;
     background-position: center center;
     background-color: #10AC84;
-    padding: 80px 100px;
+    padding: 82px 100px;
     border-radius: 20px;
 }
 
 .quote-card h2 {
-    font-size: 32px;
-    line-height: 48px;
+    font-size: 50px;
+    line-height: 68px;
     font-weight: 600;
     color: #FFFFFF;
     text-align: center;
-    margin-bottom: 15px;
+    margin-bottom: 25px;
 }
 
 .quote-card form {
@@ -637,19 +654,23 @@ footer {}
     font-size: 14px;
     line-height: 26px;
     text-transform: capitalize;
-    color: #010C09;
-    opacity: 0.5;
+    color: #010e0b80;
 }
 
 .footer-widget .text p a {
-    color: #010C09;
+    color: #010e0b80;
 }
 
 .footer-widget .text p a:hover {
     opacity: 1;
+    color: #10AC84;
 }
 
 .footer-widget .text p br {}
+
+.contact-text p {
+    margin-bottom: 5px;
+}
 
 .footer-widget .footer-logo {
     width: 200px;
@@ -673,6 +694,7 @@ footer {}
 
 .footer-nav li a:hover {
     opacity: 1;
+    color: #10AC84;
 }
 
 .copy-right {
@@ -733,6 +755,19 @@ footer {}
     bottom: 0;
     left: 0;
     right: 0;
+}
+
+.inner-banner::after {
+    content: '';
+    background-image: url(../images/inner-banner-path.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center right;
+    position: absolute;
+    height: 100%;
+    width: 25%;
+    top: 0;
+    left: 0;
 }
 
 .inner-banner-content {
@@ -1229,7 +1264,6 @@ footer {}
 .select-box {
     position: relative;
     padding-right: 20px !important;
-    width: 105px;
 }
 
 .sb-current {
@@ -1340,6 +1374,10 @@ footer {}
     position: absolute;
     left: 0;
     padding: 24px 16px;
+}
+
+.country-code-box .select-box {
+    width: 105px;
 }
 
 .country-code-box .sb-list {
