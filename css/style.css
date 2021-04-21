@@ -79,13 +79,12 @@ textarea,
 a,
 a:hover {
     text-decoration: none;
-    color: #10AC84;
-    opacity: .8;
     transition: linear .2s;
 }
 
 a:hover {
     opacity: 1;
+    color: #10AC84;
 }
 
 /* a:focus{
@@ -230,8 +229,12 @@ header nav {
 
 .dropdown-menu li a {
     font-size: 14px;
-    line-height: 23px;
     color: #010C09;
+    line-height: 32px;
+}
+
+.dropdown-menu li a:hover {
+    color: #10AC84;
 }
 
 .dropdown-menu.resources {
@@ -514,7 +517,7 @@ header nav {
 /*:::::::::::::::::::::::::::: features section css ::::::::::::::::::::::::::::*/
 .features-sec {
     padding: 100px 0;
-    background: linear-gradient(180deg, #fff0 0%, #10ac840d 100%);
+    background-color: linear-gradient(180deg, #fff0 0%, #10ac840d 100%);
     background-image: url(../images/features-bg-left.svg);
     background-repeat: no-repeat;
     background-size: contain;
@@ -555,11 +558,11 @@ header nav {
     margin: auto;
 }
 
-.quote-card form p {
+.quote-card form .field {
     margin: 0;
     display: table-cell;
     width: 100%;
-    padding-left: 15px;
+    padding-right: 0;
 }
 
 .quote-card form select {
@@ -578,6 +581,9 @@ header nav {
 .quote-card form input {
     height: 70px;
     border: none;
+    width: 100%;
+    padding-left: 130px;
+    border-radius: 10px 0 0 10px;
 }
 
 .quote-card form button {
@@ -590,6 +596,18 @@ header nav {
     position: relative;
     top: -2px;
     right: 1px;
+}
+
+.quote-card form button:hover {
+    color: #fff;
+    border-width: 5px;
+    border-color: #fff;
+    border-radius: 10px;
+    height: 67px;
+    position: relative;
+    top: -2px;
+    right: 1px;
+    background-color: #0a7c60;
 }
 
 /*:::::::::::::::::::::::::::: footer section css ::::::::::::::::::::::::::::*/
@@ -1205,4 +1223,125 @@ footer {}
         transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.5);
         opacity: 0;
     }
+}
+
+/*:::::::::::::::::::::::::::: custom select css ::::::::::::::::::::::::::::*/
+.select-box {
+    position: relative;
+    padding-right: 20px !important;
+    width: 105px;
+}
+
+.sb-current {
+    position: relative;
+    cursor: pointer;
+    outline: none;
+    text-align: center;
+}
+
+.sb-current:focus+.sb-list {
+    opacity: 1;
+    -webkit-animation-name: none;
+    animation-name: none;
+}
+
+.sb-current:focus+.sb-list .sb-option {
+    cursor: pointer;
+}
+
+.select-box__icon {
+    position: absolute;
+    top: 50%;
+    right: -20px;
+    transform: translateY(-50%);
+    width: 15px;
+    transition: 0.2s ease;
+}
+
+.sb-value {
+    display: flex;
+}
+
+.sb-input {
+    display: none;
+}
+
+.sb-input:checked+.sb-input-text {
+    display: block;
+}
+
+.sb-input-text {
+    display: none;
+    width: 100%;
+    margin: 0;
+}
+
+.sb-list {
+    position: absolute;
+    width: 120px;
+    opacity: 0;
+    -webkit-animation-name: HideList;
+    animation-name: HideList;
+    -webkit-animation-duration: 0.5s;
+    animation-duration: 0.5s;
+    -webkit-animation-delay: 0.5s;
+    animation-delay: 0.5s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-timing-function: step-start;
+    animation-timing-function: step-start;
+    padding: 20px 17px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 25px #00000026;
+    border-radius: 10px;
+    right: 0;
+    top: 87px;
+}
+
+.sb-option {
+    display: block;
+    font-size: 14px;
+    color: #010C09;
+    line-height: 32px;
+    text-align: right;
+    transition: linear .2s;
+}
+
+.sb-option:hover {
+    color: #10AC84;
+    transition: linear .2s;
+}
+
+@-webkit-keyframes HideList {
+    from {
+        transform: scaleY(1);
+    }
+
+    to {
+        transform: scaleY(0);
+    }
+}
+
+@keyframes HideList {
+    from {
+        transform: scaleY(1);
+    }
+
+    to {
+        transform: scaleY(0);
+    }
+}
+
+.drop-toggle {
+    padding-left: 5px;
+}
+
+.country-code-box {
+    position: absolute;
+    left: 0;
+    padding: 24px 16px;
+}
+
+.country-code-box .sb-list {
+    top: 50px;
 }
