@@ -1,3 +1,11 @@
+// toggler script
+$(document).ready(function () {
+  $(".toggler").click(function () {
+      $(".side-bar").toggleClass("side-show");
+  });
+});
+
+
 // video container js
 let playButton = document.querySelector('.video-container a');
 playButton.addEventListener('click', playVideo);

@@ -345,12 +345,14 @@ header nav {
     margin-right: 40px;
     margin-bottom: 35px;
 }
-.hero-btn-group li:first-child a{
+
+.hero-btn-group li:first-child a {
     padding: 20px 35px;
 }
+
 .hero-btn-group li:last-child {
     margin: 0;
-    
+
 }
 
 .hero-btn-group li:last-child a {
@@ -359,9 +361,11 @@ header nav {
     line-height: 1;
     color: #010C09;
 }
-.hero-btn-group li:last-child a:hover{
+
+.hero-btn-group li:last-child a:hover {
     color: #10AC84;
 }
+
 .hero-btn-group li a .icon {}
 
 .hero-btn-group li a .icon svg {
@@ -880,6 +884,8 @@ footer {}
     vertical-align: top;
     padding-right: 25px;
     border-right: 1px solid #00000026;
+    overflow: hidden;
+    transition: linear .5s;
 }
 
 .side-bar h3 {
@@ -1394,4 +1400,21 @@ footer {}
 
 .country-code-box .sb-list {
     top: 50px;
+}
+
+.toggler {
+    background-color: #10AC84;
+    color: #fff;
+    border-radius: 6px;
+    padding: 8px 10px;
+    font-size: 12px;
+    line-height: 1;
+    position: fixed;
+    right: 25px;
+    bottom: 50px;
+    z-index: 10;
+}
+
+.toggler:hover {
+    background-color: #0c8f6e;
 }
