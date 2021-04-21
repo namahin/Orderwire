@@ -74,8 +74,14 @@
                             <a class="nav-link" href="#">Licensing</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="ResourcesDropdown" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">Resources</a>
+                            <a class="nav-link" href="#" id="ResourcesDropdown" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">Resources<span class="drop-toggle"><svg width="15" height="9"
+                                        viewBox="0 0 17 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M0.528662 0.245899C0.820861 -0.0521604 1.27811 -0.0792568 1.60031 0.16461L1.69262 0.245899L8.2876 6.97342L14.8826 0.245899C15.1748 -0.0521604 15.632 -0.0792568 15.9542 0.16461L16.0465 0.245899C16.3387 0.543959 16.3653 1.01037 16.1262 1.33904L16.0465 1.43321L8.86958 8.7541C8.57738 9.05216 8.12014 9.07926 7.79793 8.83539L7.70562 8.7541L0.528662 1.43321C0.207243 1.10534 0.207243 0.573765 0.528662 0.245899Z"
+                                            fill="currentColor" />
+                                    </svg>
+                                </span></a>
                             <ul class="dropdown-menu resources" aria-labelledby="ResourcesDropdown">
                                 <li>
                                     <p class="nav-title">
@@ -127,14 +133,43 @@
                                 </li>
                             </ul>
                         </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="LangDropdown" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">English</a>
-                            <ul class="dropdown-menu" aria-labelledby="LangDropdown">
-                                <li><a href="#">English (US)</a></li>
-                                <li><a href="#">German</a></li>
-                                <li><a href="#">Spanish</a></li>
-                            </ul>
+                        <li class="nav-item">
+                            <div class="select-box nav-link">
+                                <div class="sb-current" tabindex="1">
+                                    <div class="sb-value">
+                                        <input class="sb-input" type="radio" id="en" value="English" name="Lang"
+                                            checked="checked" />
+                                        <p class="sb-input-text">English</p>
+                                    </div>
+                                    <div class="sb-value">
+                                        <input class="sb-input" type="radio" id="enusa" value="English (US)"
+                                            name="Lang" />
+                                        <p class="sb-input-text">English (US)</p>
+                                    </div>
+                                    <div class="sb-value">
+                                        <input class="sb-input" type="radio" id="german" value="German" name="Lang" />
+                                        <p class="sb-input-text">German</p>
+                                    </div>
+                                    <div class="sb-value">
+                                        <input class="sb-input" type="radio" id="spanish" value="Spanish" name="Lang" />
+                                        <p class="sb-input-text">Spanish</p>
+                                    </div>
+                                    <img class="select-box__icon" src="images/arrow-down.svg" alt="Arrow Icon"
+                                        aria-hidden="true" /><!-- -->
+                                </div>
+                                <ul class="sb-list">
+                                    <li><label class="sb-option" for="en" aria-hidden="aria-hidden">English</label></li>
+                                    <li><label class="sb-option" for="enusa"
+                                            aria-hidden="aria-hidden">English(US)</label>
+                                    </li>
+                                    <li><label class="sb-option" for="german" aria-hidden="aria-hidden">German</label>
+                                    </li>
+                                    <li><label class="sb-option" for="spanish" aria-hidden="aria-hidden">Spanish</label>
+                                    </li>
+                                </ul>
+
+
+                            </div>
                         </li>
                     </ul>
                     <!-- menu end -->
@@ -188,7 +223,7 @@
                 <div class="side-bar">
                     <div class="side-bar-widget">
                         <ul>
-                            <li><a href="#">OrderWire Basics</a></li>
+                            <li><a href="document-sub-category.html">OrderWire Basics</a></li>
                             <li><a href="#" class="active">Administrative Guide</a>
                                 <ul class="sub-nav">
                                     <li><a href="#">Getting Started</a></li>
@@ -236,7 +271,7 @@
                             <div class="inner-block">
                                 <h3>Products and Inventory</h3>
                                 <ul>
-                                    <li><a href="#">Setting Up Categories</a></li>
+                                    <li><a href="">Setting Up Categories</a></li>
                                     <li><a href="document-details.html">Setting Up Products</a></li>
                                     <li><a href="#">Setting Up Modifiers</a></li>
                                     <li><a href="#">Setting Up Ingredients and Receipe</a></li>
@@ -276,18 +311,41 @@
     <section class="quote-sec">
         <div class="container">
             <div class="row">
-                <div class="col-md-8 offset-md-2">
+                <div class="col-md-10 offset-md-1">
                     <div class="quote-card">
                         <h2>Let’s connect together</h2>
                         <form action="#">
-                            <p>
-                                <select name="" id="">
-                                    <option value="US">+01 US</option>
-                                    <option value="BD">+880 BD</option>
-                                </select>
+                            <div class="field">
+                                <div class="country-code-box">
+                                    <div class="select-box">
+                                        <div class="sb-current" tabindex="1">
+                                            <div class="sb-value">
+                                                <input class="sb-input" type="radio" id="US" value="US"
+                                                    checked="checked" name="country-code" />
+                                                <p class="sb-input-text">+1 US</p>
+                                            </div>
+                                            <div class="sb-value">
+                                                <input class="sb-input" type="radio" id="BD" value="BD"
+                                                    name="country-code" />
+                                                <p class="sb-input-text">+880 BD</p>
+                                            </div>
+                                            <img class="select-box__icon" src="images/arrow-down.svg" alt="Arrow Icon"
+                                                aria-hidden="true" />
+                                        </div>
+                                        <ul class="sb-list">
+                                            <li><label class="sb-option" for="US" aria-hidden="aria-hidden">+01
+                                                    US</label>
+                                            </li>
+                                            <li><label class="sb-option" for="BD" aria-hidden="aria-hidden">+880
+                                                    BD</label>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
                                 <input type="" placeholder="Enter mobile number" required>
-                            </p>
-                            <button type="submit" class="btn-theme">Request a callback </button>
+                            </div>
+                            <button type="submit" class="btn-theme"><span class="text">Request a callback</span><span
+                                    class="icon"></span></button>
                         </form>
                     </div>
                 </div>
@@ -301,7 +359,7 @@
         <div class="footer-widget-group">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-3 col-sm-3">
+                    <div class="col-md-3 col-sm-6">
                         <div class="footer-widget">
                             <div class="footer-logo">
                                 <a href="index.html"><img src="images/site-logo.png" alt="Orderwire"></a>
@@ -313,7 +371,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3 col-sm-3">
+                    <div class="col-md-3 col-sm-6">
                         <div class="footer-widget">
                             <h3>Quick links</h3>
                             <ul class="footer-nav">
@@ -325,7 +383,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col-md-3 col-sm-3">
+                    <div class="col-md-3 col-sm-6">
                         <div class="footer-widget">
                             <h3>Info</h3>
                             <ul class="footer-nav">
@@ -335,15 +393,13 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col-md-3 col-sm-3">
+                    <div class="col-md-3 col-sm-6">
                         <div class="footer-widget">
                             <h3>Contact Us</h3>
-                            <div class="text">
-                                <p>Phone:<br>
-                                    <a href="tel:45749494984947">45749494984947</a><br>
-                                    <a href="mailto:info@orderwire.com">info@orderwire.com</a><br>
-                                    101 West Broadway, Ste 300 San Diego, CA 92101
-                                </p>
+                            <div class="text contact-text">
+                                <p>Phone:<br><a href="tel:45749494984947">45749494984947</a></p>
+                                <p><a href="mailto:info@orderwire.com">info@orderwire.com</a></p>
+                                <p>101 West Broadway, Ste 300 San Diego, CA 92101</p>
                             </div>
                         </div>
                     </div>
@@ -353,10 +409,10 @@
         <div class="copy-right">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-6 col-sm-6">
+                    <div class="col-md-6 col-sm-12">
                         <p class="copy-right-text">Copyright © 2021 orderwire ® All Rights Reserved</p>
                     </div>
-                    <div class="col-md-6 col-sm-6">
+                    <div class="col-md-6 col-sm-12">
                         <ul class="social-logo">
                             <li><span>Follow US</span></li>
                             <li><a href="#" target="_blank"><svg width="31" height="31" viewBox="0 0 31 31" fill="none"

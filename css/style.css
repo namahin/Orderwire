@@ -111,11 +111,11 @@ button:hover {
 .btn-theme {
     font-size: 16px;
     font-weight: 500;
-    line-height: 1;
+    line-height: 1.5;
     color: #fff;
     background-color: #10AC84;
     border: 1px solid #10AC84;
-    padding: 18px 25px;
+    padding: 13px 25px;
     border-radius: 6px;
     display: inline-block;
     opacity: 1;
@@ -166,6 +166,7 @@ header nav {
 .navbar-toggler {
     border: none !important;
     box-shadow: none !important;
+    padding-right: 0;
 }
 
 .navbar-toggler span svg {
@@ -336,16 +337,20 @@ header nav {
 }
 
 .hero-btn-group {
-    display: inline-flex;
+    display: inline-block;
     align-items: center;
 }
 
 .hero-btn-group li {
     margin-right: 40px;
+    margin-bottom: 35px;
 }
-
+.hero-btn-group li:first-child a{
+    padding: 20px 35px;
+}
 .hero-btn-group li:last-child {
-    margin-right: 0;
+    margin: 0;
+    
 }
 
 .hero-btn-group li:last-child a {
@@ -354,7 +359,9 @@ header nav {
     line-height: 1;
     color: #010C09;
 }
-
+.hero-btn-group li:last-child a:hover{
+    color: #10AC84;
+}
 .hero-btn-group li a .icon {}
 
 .hero-btn-group li a .icon svg {
@@ -401,6 +408,7 @@ header nav {
     text-align: center;
     margin-bottom: 30px;
     overflow: hidden;
+    z-index: 1;
 }
 
 .solutions-card:hover {
@@ -625,6 +633,10 @@ header nav {
     top: -2px;
     right: 1px;
     background-color: #0a7c60;
+}
+
+.quote-card form button .icon {
+    display: none;
 }
 
 /*:::::::::::::::::::::::::::: footer section css ::::::::::::::::::::::::::::*/
