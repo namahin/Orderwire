@@ -616,7 +616,7 @@ header nav {
     height: 70px;
     border: none;
     width: 100%;
-    padding-left: 130px;
+    padding-left: 150px;
     border-radius: 10px 0 0 10px;
 }
 
@@ -1447,6 +1447,9 @@ footer {}
     position: absolute;
     left: 0;
     padding: 24px 16px;
+    border-right: 1px solid #DADADA;
+    top: 0;
+    bottom: 0;
 }
 
 .country-code-box .select-box {
