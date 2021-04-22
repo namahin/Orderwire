@@ -5,6 +5,8 @@ $(document).ready(function () {
   });
 });
 
+//install WOW js
+new WOW().init();
 
 // video container js
 let playButton = document.querySelector('.video-container a');
