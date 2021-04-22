@@ -337,13 +337,13 @@ header nav {
 }
 
 .hero-btn-group {
-    display: inline-block;
-    align-items: center;
+
 }
 
 .hero-btn-group li {
     margin-right: 40px;
     margin-bottom: 35px;
+    display: inline-block;
 }
 
 .hero-btn-group li:first-child a {
