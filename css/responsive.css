@@ -184,6 +184,24 @@
         bottom: 0;
         transition: linear .3s;
     }
+
+    .toggler {
+        display: inline-block;
+        background-color: #10AC84;
+        color: #fff;
+        border-radius: 6px;
+        padding: 8px 10px;
+        font-size: 12px;
+        line-height: 1;
+        position: fixed;
+        right: 25px;
+        bottom: 50px;
+        z-index: 10;
+    }
+
+    .toggler:hover {
+        background-color: #0c8f6e;
+    }
 }
 
 /* // Small devices (landscape phones, less than 768px) */
