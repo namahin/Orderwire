@@ -379,6 +379,8 @@ header nav {
     padding-left: 20px;
     color: #010C09;
     transition: linear .2s;
+    font-weight: 500;
+    font-size: 16px;
 }
 
 /*:::::::::::::::::::::::::::: solutions section css ::::::::::::::::::::::::::::*/
@@ -916,7 +918,9 @@ footer {}
     margin-bottom: 50px;
 
 }
-
+.side-bar-widget:last-child{
+    margin-bottom: 0px;
+}
 .side-bar-widget ul {
     padding: 30px 20px;
 }
