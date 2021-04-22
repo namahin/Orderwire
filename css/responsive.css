@@ -63,6 +63,7 @@
 
     .sb-current:focus+.sb-list {
         /*         pointer-events: none; */
+        /*         display: block; */
     }
 
     .sb-list {
@@ -71,6 +72,7 @@
         top: 0;
         transform: translate(-50%, 0) !important;
         /*         pointer-events: all; */
+        /*         display: none; */
     }
 
     .country-code-box .sb-list {
@@ -202,6 +204,10 @@
     .toggler:hover {
         background-color: #0c8f6e;
     }
+
+    .sub-category-card {
+        padding-left: 0px;
+    }
 }
 
 /* // Small devices (landscape phones, less than 768px) */
@@ -227,6 +233,10 @@
         font-size: 32px;
         line-height: 42px;
         margin-bottom: 18px;
+    }
+
+    .inner-banner-content p br {
+        display: none;
     }
 }
 

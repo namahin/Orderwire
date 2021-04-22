@@ -336,9 +336,7 @@ header nav {
     margin-bottom: 50px;
 }
 
-.hero-btn-group {
-
-}
+.hero-btn-group {}
 
 .hero-btn-group li {
     margin-right: 40px;
@@ -369,11 +367,18 @@ header nav {
 .hero-btn-group li a .icon {}
 
 .hero-btn-group li a .icon svg {
-    width: 50px;
+    width: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
 }
 
 .hero-btn-group li a .text {
     padding-left: 20px;
+    color: #010C09;
+    transition: linear .2s;
 }
 
 /*:::::::::::::::::::::::::::: solutions section css ::::::::::::::::::::::::::::*/
@@ -750,6 +755,12 @@ footer {}
 
 .social-logo li a svg {
     width: 26px;
+    transition: linear .2s;
+}
+
+.social-logo li a svg:hover path {
+    fill-opacity: 1;
+    transition: linear .2s;
 }
 
 /*:::::::::::::::::::::::::::: inner page css ::::::::::::::::::::::::::::*/
@@ -1254,6 +1265,50 @@ footer {}
     left: 1px;
 }
 
+.video-watch-button:hover .text {
+    color: #10AC84;
+    transition: linear .2s;
+}
+
+.video-watch-button .icon {
+    position: relative;
+    margin-right: 20px;
+    margin-left: 10px
+}
+
+.video-watch-button .icon::before {
+    content: "";
+    position: absolute;
+    z-index: 0;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: #fff;
+    border-radius: 50%;
+    -webkit-animation: pulse-border 1500ms ease-out infinite;
+    animation: pulse-border 1500ms ease-out infinite;
+}
+
+.video-watch-button .icon::after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: #fff;
+    border-radius: 50%;
+    transition: all 200ms;
+}
+
+.video-watch-button .icon svg {}
+
 @-webkit-keyframes pulse-border {
     0% {
         transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
@@ -1401,6 +1456,7 @@ footer {}
 .country-code-box .sb-list {
     top: 50px;
 }
-.toggler{
+
+.toggler {
     display: none;
 }
