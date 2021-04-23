@@ -12,6 +12,13 @@ $(document).ready(function () {
   });
 });
 
+$(document).ready(function () {
+  $("#toggler-btn").click(function () {
+      $(".toggler").toggleClass("toggler-dark");
+  });
+});
+
+
 //install WOW js
 new WOW().init();
 

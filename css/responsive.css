@@ -203,19 +203,21 @@
         right: 25px;
         bottom: 50px;
         z-index: 10;
-        height: 50px;
-        width: 50px;
+        height: 42px;
+        width: 42px;
         box-shadow: -4px 4px 25px #0000002e;
     }
 
     .toggler:hover {
         background-color: #0c8f6e;
     }
-
+    .toggler-dark{
+        background-color: #000000b3;
+    }
     .toggler-icon {
         display: block;
         height: 4px;
-        width: 32px;
+        width: 28px;
         margin: auto;
         position: relative;
         background-color: #fff;
@@ -227,7 +229,7 @@
         content: '';
         display: block;
         height: 4px;
-        width: 32px;
+        width: 28px;
         margin: auto;
         position: relative;
         background-color: #fff;
@@ -240,7 +242,7 @@
         content: '';
         display: block;
         height: 4px;
-        width: 32px;
+        width: 28px;
         margin: auto;
         position: relative;
         background-color: #fff;
