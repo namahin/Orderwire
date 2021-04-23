@@ -5,6 +5,13 @@ $(document).ready(function () {
   });
 });
 
+// toggler icon script
+$(document).ready(function () {
+  $(".toggler").click(function () {
+      $(".toggler-icon").toggleClass("toggler-close");
+  });
+});
+
 //install WOW js
 new WOW().init();
 
