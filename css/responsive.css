@@ -85,7 +85,7 @@
     .country-code-box .sb-list {
         width: 100%;
         top: 50px;
-        bottom: 20px;
+        bottom: auto;
     }
 
     .sb-list label {
@@ -317,8 +317,6 @@
     .solutions-card {
         padding: 30px 50px 50px;
     }
-
-    .country-code-box .sb-list {}
 
     .country-code-box .select-box {
         width: 100px;
