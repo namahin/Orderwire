@@ -402,6 +402,9 @@
 }
 
 @media (max-width: 479.98px) {
+    .quote-card{
+        padding: 15px;
+    }
     .quote-card form {}
 
     .quote-card form .field {
