@@ -75,7 +75,8 @@
     .sb-list {
         width: 200px;
         left: 50%;
-        top: 0;
+        top: auto;
+        bottom: 20px;
         transform: translate(-50%, 0) !important;
         /*         pointer-events: all; */
         /*         display: none; */
@@ -83,6 +84,8 @@
 
     .country-code-box .sb-list {
         width: 100%;
+        top: 50px;
+        bottom: 20px;
     }
 
     .sb-list label {
@@ -211,9 +214,11 @@
     .toggler:hover {
         background-color: #0c8f6e;
     }
-    .toggler-dark{
+
+    .toggler-dark {
         background-color: #000000b3;
     }
+
     .toggler-icon {
         display: block;
         height: 4px;
