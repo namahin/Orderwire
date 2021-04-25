@@ -918,9 +918,11 @@ footer {}
     margin-bottom: 50px;
 
 }
-.side-bar-widget:last-child{
+
+.side-bar-widget:last-child {
     margin-bottom: 0px;
 }
+
 .side-bar-widget ul {
     padding: 30px 20px;
 }
@@ -1341,6 +1343,7 @@ footer {}
 .select-box {
     position: relative;
     padding-right: 20px !important;
+    width: 120px;
 }
 
 .sb-current {
@@ -1348,6 +1351,16 @@ footer {}
     cursor: pointer;
     outline: none;
     text-align: center;
+}
+
+.sb-current::before {
+    content: '';
+
+    position: absolute;
+    left: 0;
+    right: -20px;
+    bottom: -35px;
+    top: -35px;
 }
 
 .sb-current:focus+.sb-list {
@@ -1400,7 +1413,7 @@ footer {}
     -webkit-animation-fill-mode: forwards;
     animation-fill-mode: forwards;
     -webkit-animation-timing-function: step-start;
-    animation-timing-function: step-start;   
+    animation-timing-function: step-start;
     background: #FFFFFF;
     box-shadow: 0px 4px 25px #00000026;
     border-radius: 10px;
@@ -1415,7 +1428,7 @@ footer {}
     color: #010C09;
     line-height: 32px;
     text-align: right;
-     padding: 2px 17px;
+    padding: 2px 17px;
     transition: linear .2s;
     position: relative;
 }
@@ -1426,21 +1439,24 @@ footer {}
     background: linear-gradient(-90deg, #fff0 0%, #10ac840d 100%);
     transition: linear .2s;
 }
-.sb-option::after{
+
+.sb-option::after {
     content: "";
-position: absolute;
+    position: absolute;
     top: 0;
-bottom: 0;
+    bottom: 0;
     left: 0;
     width: 4px;
     height: 100%;
-background-color: transparent;
-border-radius: 0 10px 10px 0;
-transition: linear .2s;
+    background-color: transparent;
+    border-radius: 0 10px 10px 0;
+    transition: linear .2s;
 }
-.sb-option:hover::after{
+
+.sb-option:hover::after {
     background-color: #10AC84;
 }
+
 @-webkit-keyframes HideList {
     from {
         transform: scaleY(1);
